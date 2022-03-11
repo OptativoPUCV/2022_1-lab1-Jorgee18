@@ -48,3 +48,21 @@ test.c:8:8: error: '_strdup' redeclared without dllimport attribute: previous dl
 cc1.exe: all warnings being treated as errors
 Compilation failed
 8ac24d3
+Fri Mar 11 11:22:10 HSP 2022: 
+In file included from test.c:5:
+exercises.c: In function 'crearPersona':
+exercises.c:62:4: error: implicit declaration of function 'strcopy'; did you mean 'strcpy'? [-Werror=implicit-function-declaration]
+   62 |    strcopy(nuevaPersona->nombre, nombre);
+      |    ^~~~~~~
+      |    strcpy
+exercises.c: In function 'crearVector':
+exercises.c:87:23: error: assignment to 'int *' from incompatible pointer type 'Vector *' [-Werror=incompatible-pointer-types]
+   87 |    vectorLocal->datos = (Vector*)calloc(n,sizeof(int));
+      |                       ^
+test.c: At top level:
+test.c:8:8: error: '_strdup' redeclared without dllimport attribute: previous dllimport ignored [-Werror=attributes]
+    8 | char * _strdup(const char * str) {
+      |        ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+2292f43
