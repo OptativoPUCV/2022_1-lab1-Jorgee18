@@ -137,7 +137,7 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
    c->datos = (int*)malloc(c->capacidad * sizeof(int));
    for(i = 0; i < c->capacidad; i++)
    {
-      if(i < 2)
+      if(i < 1)
       {
          c->datos[i] = a1 + b1;
       }
