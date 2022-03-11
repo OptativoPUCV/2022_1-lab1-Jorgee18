@@ -117,16 +117,6 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) 
 {
-   /*
-   a->datos = NULL;
-   a->datos = (int*)malloc(largo * sizeof(int));
-
-   b->datos = NULL;
-   b->datos = (int*)malloc(largo * sizeof(int));
-
-   c->datos = NULL;
-   c->datos = (int*)malloc(largo * sizeof(int));
-   */
    for(int i = 0; i < a->capacidad; i++)
    {
       c->datos[i] = a->datos[i] + b->datos[i];
@@ -138,6 +128,13 @@ Ejercicio 8.
 Use las operaciones implementadas de vectores para 
 sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
-void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
-
+void sumaV2(int a1, int a2, int b1, int b2, Vector *c)
+{
+   int suma , suma2;
+   suma = a1 + b1;
+   suma2 = a2 + b2;
+   c->datos = NULL;
+   c->datos = (int*)malloc(c->capacidad * sizeof(int));
+   c->datos[0] = suma;
+   c->datos[1] = suma2;
 }
