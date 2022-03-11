@@ -83,6 +83,7 @@ Vector * crearVector(int n)
    Vector *vectorLocal;
    vectorLocal = NULL;
    vectorLocal = (Vector*)malloc(n * sizeof(Vector));
+   vectorLocal->capacidad = n;
    vectorLocal->datos = NULL;
    vectorLocal->datos = (int*)calloc(n, sizeof(int));
 
