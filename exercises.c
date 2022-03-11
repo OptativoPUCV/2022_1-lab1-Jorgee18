@@ -97,9 +97,7 @@ la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) 
 {
-   v = NULL;
-   v = (Vector*)malloc(i * sizeof(Vector));
-   v[i].capacidad = valor; 
+   v->datos[i] = valor;
 }
 
 /*
@@ -109,12 +107,7 @@ la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) 
 {
-   v = NULL;
-   v = (Vector*)malloc(sizeof(Vector));
-   v[i].datos = NULL;
-   v[i].datos = (int*) malloc(i*sizeof(int));
-
-   return v[i].datos[i];
+   return v->datos[i] ;
 }
 
 /*
@@ -122,7 +115,39 @@ Ejercicio 7.
 Función que suma los vectores `a` y `b` y 
 actualiza el vector `c` con el resultado de la suma.
 */
-void sumaV(Vector * a, Vector * b, Vector * c) {
+void sumaV(Vector * a, Vector * b, Vector * c) 
+{
+  /* int numero, largo, b1 = 0;
+   scanf("%i",&largo);
+   a = NULL;
+   b = NULL;
+   c = NULL;
+   a = (Vector*) malloc(sizeof(Vector));
+   a->datos = NULL;
+   a->datos = (int*)malloc(largo * sizeof(int));
+
+   b = (Vector*) malloc(sizeof(Vector));
+   b->datos = NULL;
+   b->datos = (int*)malloc(largo * sizeof(int));
+
+   c = (Vector*) malloc(sizeof(Vector));
+   c->datos = NULL;
+   c->datos = (int*)malloc(largo * sizeof(int));
+
+   for(int i = 0; i < largo + largo; i++)
+   {
+      scanf("%i",&numero);
+      if(i < largo)
+      {
+         a->datos[i] = numero;
+      }
+      else
+      {
+         b1 ++;
+         b->datos[b1] = numero;
+
+      }
+   }*/
 
 }
 
