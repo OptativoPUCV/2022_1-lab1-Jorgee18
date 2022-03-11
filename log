@@ -143,3 +143,27 @@ Fri Mar 11 12:02:41 HSP 2022:
  tests:  4|3
 total_score: 40/70
 ea568ec
+Fri Mar 11 15:21:50 HSP 2022: 
+ exercises.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+exercises.c: In function 'asignarValor':
+exercises.c:102:8: error: invalid type argument of '->' (have 'Vector')
+  102 |    v[i]->datos = NULL;
+      |        ^~
+exercises.c:103:8: error: invalid type argument of '->' (have 'Vector')
+  103 |    v[i]->datos = (int*) calloc(sizeof(int));
+      |        ^~
+exercises.c:103:25: error: too few arguments to function 'calloc'
+  103 |    v[i]->datos = (int*) calloc(sizeof(int));
+      |                         ^~~~~~
+In file included from test.c:2:
+C:/TDM-GCC-64/x86_64-w64-mingw32/include/stdlib.h:529:17: note: declared here
+  529 |   void *__cdecl calloc(size_t _NumOfElements,size_t _SizeOfElements);
+      |                 ^~~~~~
+In file included from test.c:5:
+exercises.c:104:8: error: invalid type argument of '->' (have 'Vector')
+  104 |    v[i]->datos[i] = valor;
+      |        ^~
+Compilation failed
+69fb958
