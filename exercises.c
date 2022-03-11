@@ -80,10 +80,11 @@ typedef struct {
 
 Vector * crearVector(int n) 
 {
-   Vector *vectorLocal = NULL;
-   vectorLocal = (Vector*) malloc(n * sizeof(int));
+   Vector *vectorLocal;
+   vectorLocal = NULL;
+   vectorLocal = (Vector*)malloc(n * sizeof(Vector));
    vectorLocal->datos = NULL;
-   vectorLocal->datos = (Vector*)calloc(n,sizeof(int));
+   vectorLocal->datos = (int*)calloc(n, sizeof(int));
 
    return vectorLocal;
 }
