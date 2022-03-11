@@ -101,7 +101,7 @@ void asignarValor(Vector * v, int i, int valor)
    v = (Vector*)malloc(i * sizeof(Vector));
    v[i].datos = NULL;
    v[i].datos = (int*) calloc(1, sizeof(int));
-   v[i].datos[i] = valor;
+   v[i].datos[0] = valor;
 
 }
 
