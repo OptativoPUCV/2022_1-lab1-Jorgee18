@@ -167,3 +167,17 @@ exercises.c:104:8: error: invalid type argument of '->' (have 'Vector')
       |        ^~
 Compilation failed
 69fb958
+Fri Mar 11 15:23:56 HSP 2022: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'asignarValor':
+exercises.c:103:24: error: too few arguments to function 'calloc'
+  103 |    v[i].datos = (int*) calloc(sizeof(int));
+      |                        ^~~~~~
+In file included from test.c:2:
+C:/TDM-GCC-64/x86_64-w64-mingw32/include/stdlib.h:529:17: note: declared here
+  529 |   void *__cdecl calloc(size_t _NumOfElements,size_t _SizeOfElements);
+      |                 ^~~~~~
+Compilation failed
+ca48bea
