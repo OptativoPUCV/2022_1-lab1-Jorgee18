@@ -109,3 +109,14 @@ Fri Mar 11 11:36:05 HSP 2022:
  tests:  3|4
 total_score: 30/70
 6b3e958
+Fri Mar 11 11:36:50 HSP 2022: 
+ exercises.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+exercises.c: In function 'crearVector':
+exercises.c:87:23: error: assignment to 'int *' from incompatible pointer type 'Vector *' [-Werror=incompatible-pointer-types]
+   87 |    vectorLocal->datos = (Vector*)calloc(n,sizeof(int));
+      |                       ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+d19a8ce
