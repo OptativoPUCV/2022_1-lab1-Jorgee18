@@ -107,8 +107,14 @@ Ejercicio 6.
 Programe la función int obtenerValor(Vector * v, int i), 
 la cual retorna el valor en la posición i del vector v.
 */
-int obtenerValor(Vector * v, int i) {
-   return 0;
+int obtenerValor(Vector * v, int i) 
+{
+   v = NULL;
+   v = (Vector*)malloc(sizeof(Vector));
+   v[i].datos = NULL;
+   v[i].datos = (int*) malloc(i*sizeof(int));
+
+   return v[i].datos[i];
 }
 
 /*
