@@ -37,9 +37,9 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-   //int largo;
-   //largo = n - m;
-   //(*suma) = sumaN(a + largo , m);
+   int largo;
+   largo = n - m;
+   (*suma) = sumaN(a + largo , m);
 }
 
 /*
@@ -60,7 +60,7 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
    //Persona *nuevaPersona = NULL;
    //nuevaPersona = (Persona*) malloc(sizeof(Persona));
    //strcopy(nuevaPersona->nombre, nombre);
-   //strcopy(nuevaPersona->rut, rut);
+   //strcpy(nuevaPersona->rut, rut);
   // nuevaPersona->edad = edad;
    return NULL;
 }
