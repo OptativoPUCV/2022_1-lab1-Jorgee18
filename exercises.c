@@ -37,9 +37,9 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-   int largo;
-   largo = n - m;
-   (*suma) = sumaN(a + largo , m);
+   //int largo;
+   //largo = n - m;
+   //(*suma) = sumaN(a + largo , m);
 }
 
 /*
@@ -57,12 +57,12 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   Persona *nuevaPersona = NULL;
-   nuevaPersona = (Persona*) malloc(sizeof(Persona));
-   strcopy(nuevaPersona->nombre, nombre);
-   strcopy(nuevaPersona->rut, rut);
-   nuevaPersona->edad = edad;
-   return nuevaPersona;
+   //Persona *nuevaPersona = NULL;
+   //nuevaPersona = (Persona*) malloc(sizeof(Persona));
+   //strcopy(nuevaPersona->nombre, nombre);
+   //strcopy(nuevaPersona->rut, rut);
+  // nuevaPersona->edad = edad;
+   return NULL;
 }
 
 /*
@@ -80,13 +80,13 @@ typedef struct {
 
 Vector * crearVector(int n) 
 {
-   Vector *vectorLocal = NULL;
-   vectorLocal = (Vector*) malloc(n * sizeof(int));
-   vectorLocal->capacidad = n;
-   vectorLocal->datos = NULL;
-   vectorLocal->datos = (Vector*)calloc(n,sizeof(int));
+   //Vector *vectorLocal = NULL;
+   //vectorLocal = (Vector*) malloc(n * sizeof(int));
+   //vectorLocal->capacidad = n;
+   //vectorLocal->datos = NULL;
+   //vectorLocal->datos = (Vector*)calloc(n,sizeof(int));
 
-   return vectorLocal;
+   return NULL;
 }
 
 /*
