@@ -117,38 +117,20 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) 
 {
-  /* int numero, largo, b1 = 0;
-   scanf("%i",&largo);
-   a = NULL;
-   b = NULL;
-   c = NULL;
-   a = (Vector*) malloc(sizeof(Vector));
+   /*
    a->datos = NULL;
    a->datos = (int*)malloc(largo * sizeof(int));
 
-   b = (Vector*) malloc(sizeof(Vector));
    b->datos = NULL;
    b->datos = (int*)malloc(largo * sizeof(int));
 
-   c = (Vector*) malloc(sizeof(Vector));
    c->datos = NULL;
    c->datos = (int*)malloc(largo * sizeof(int));
-
-   for(int i = 0; i < largo + largo; i++)
+   */
+   for(int i = 0; i < a->capacidad; i++)
    {
-      scanf("%i",&numero);
-      if(i < largo)
-      {
-         a->datos[i] = numero;
-      }
-      else
-      {
-         b1 ++;
-         b->datos[b1] = numero;
-
-      }
-   }*/
-
+      c->datos[i] = a->datos[i] + b->datos[i];
+   }
 }
 
 /*
